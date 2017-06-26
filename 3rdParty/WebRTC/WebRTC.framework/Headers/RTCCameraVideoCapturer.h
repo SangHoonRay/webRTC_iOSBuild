@@ -13,11 +13,13 @@
 
 #import <WebRTC/RTCMacros.h>
 #import <WebRTC/RTCVideoCapturer.h>
+#import <WebRTC/RTCCameraPreviewCallback.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 RTC_EXPORT
-// Camera capture that implements RTCVideoCapturer. Delivers frames to a RTCVideoCapturerDelegate
+// Camera capture that implements RTCVideoCapturer. Delivers frames to a RTCVideoCapturerDelegate`
 // (usually RTCVideoSource).
 @interface RTCCameraVideoCapturer : RTCVideoCapturer
 
@@ -28,6 +30,8 @@ RTC_EXPORT
 + (NSArray<AVCaptureDevice *> *)captureDevices;
 // Returns list of formats that are supported by this class for this device.
 + (NSArray<AVCaptureDeviceFormat *> *)supportedFormatsForDevice:(AVCaptureDevice *)device;
+
+- (void) setPreviewCallback : (RTCCameraPreviewCallback) callback;
 
 // Starts and stops the capture session asynchronously.
 - (void)startCaptureWithDevice:(AVCaptureDevice *)device

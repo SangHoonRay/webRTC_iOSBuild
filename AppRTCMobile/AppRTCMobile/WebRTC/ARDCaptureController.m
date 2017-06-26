@@ -12,6 +12,10 @@
 
 #import "ARDSettingsModel.h"
 
+@interface ARDCaptureController()<AVCaptureVideoDataOutputSampleBufferDelegate>
+
+@end
+
 @implementation ARDCaptureController {
   RTCCameraVideoCapturer *_capturer;
   ARDSettingsModel *_settings;
@@ -21,6 +25,7 @@
 - (instancetype)initWithCapturer:(RTCCameraVideoCapturer *)capturer
                         settings:(ARDSettingsModel *)settings {
   if ([super init]) {
+      
     _capturer = capturer;
     _settings = settings;
     _usingFrontCamera = YES;
@@ -37,6 +42,12 @@
   NSInteger fps = [self selectFpsForFormat:format];
 
   [_capturer startCaptureWithDevice:device format:format fps:fps];
+  [_capturer setPreviewCallback:onNewCameraFrame];
+}
+
+void onNewCameraFrame(unsigned char * data, int length, int width, int height, int format)
+{
+
 }
 
 - (void)stopCapture {
@@ -49,7 +60,6 @@
 }
 
 #pragma mark - Private
-
 - (AVCaptureDevice *)findDeviceForPosition:(AVCaptureDevicePosition)position {
   NSArray<AVCaptureDevice *> *captureDevices = [RTCCameraVideoCapturer captureDevices];
   for (AVCaptureDevice *device in captureDevices) {

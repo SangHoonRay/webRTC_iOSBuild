@@ -52,7 +52,6 @@
 		7101CFA61EFD0D1A00B83871 /* RTCMediaConstraints+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7101CF911EFD0D1A00B83871 /* RTCMediaConstraints+JSON.m */; };
 		7101CFA71EFD0D1A00B83871 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7101CF931EFD0D1A00B83871 /* RTCSessionDescription+JSON.m */; };
 		7101CFAA1EFD0D4800B83871 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7101CFA91EFD0D4800B83871 /* WebRTC.framework */; };
-		7101CFAE1EFD0E0D00B83871 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7101CFAD1EFD0E0D00B83871 /* Security.framework */; };
 		7101CFB01EFD0E3200B83871 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7101CFAF1EFD0E3200B83871 /* libicucore.tbd */; };
 		7101CFB11EFD0ECC00B83871 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7101CFA91EFD0D4800B83871 /* WebRTC.framework */; };
 		7101CFB21EFD0ECC00B83871 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7101CFA91EFD0D4800B83871 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -155,7 +154,6 @@
 		7101CF921EFD0D1A00B83871 /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCSessionDescription+JSON.h"; sourceTree = "<group>"; };
 		7101CF931EFD0D1A00B83871 /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCSessionDescription+JSON.m"; sourceTree = "<group>"; };
 		7101CFA91EFD0D4800B83871 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = ../3rdParty/WebRTC/WebRTC.framework; sourceTree = "<group>"; };
-		7101CFAD1EFD0E0D00B83871 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7101CFAF1EFD0E3200B83871 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -165,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7101CFB01EFD0E3200B83871 /* libicucore.tbd in Frameworks */,
-				7101CFAE1EFD0E0D00B83871 /* Security.framework in Frameworks */,
 				7101CFAA1EFD0D4800B83871 /* WebRTC.framework in Frameworks */,
 				7101CFB11EFD0ECC00B83871 /* WebRTC.framework in Frameworks */,
 			);
@@ -314,7 +311,6 @@
 			isa = PBXGroup;
 			children = (
 				7101CFAF1EFD0E3200B83871 /* libicucore.tbd */,
-				7101CFAD1EFD0E0D00B83871 /* Security.framework */,
 				7101CFA91EFD0D4800B83871 /* WebRTC.framework */,
 			);
 			name = Frameworks;

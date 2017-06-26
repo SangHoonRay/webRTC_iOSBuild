@@ -712,6 +712,7 @@ static int const kKbpsMultiplier = 1000;
 #if !TARGET_IPHONE_SIMULATOR
   if (![_settings currentAudioOnlySettingFromStore]) {
     RTCVideoSource *source = [_factory videoSource];
+    
     RTCCameraVideoCapturer *capturer = [[RTCCameraVideoCapturer alloc] initWithDelegate:source];
     [_delegate appClient:self didCreateLocalCapturer:capturer];
     localVideoTrack =

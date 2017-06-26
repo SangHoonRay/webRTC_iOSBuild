@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		+/pSlzmIV0TU1eDLCOaZ05Jnb1E=
+		</data>
 		<key>Headers/RTCAVFoundationVideoSource.h</key>
 		<data>
 		vo+mkF8V79zvrL0rwO8rciNuLL8=
@@ -24,13 +28,17 @@
 		<data>
 		nv25j1+h1QqgoV2ytKZ8rIeBrGI=
 		</data>
+		<key>Headers/RTCCameraPreviewCallback.h</key>
+		<data>
+		jrYpP/j7A0VqlDxL+6mCtGHYx78=
+		</data>
 		<key>Headers/RTCCameraPreviewView.h</key>
 		<data>
 		1CrQimcYi4XXPUTKoOxUMKUFvbk=
 		</data>
 		<key>Headers/RTCCameraVideoCapturer.h</key>
 		<data>
-		OsOaHSt7YBDWSzsMDqVtbMDP3V4=
+		1+uomg4jpG4m3pg4MzWtip7+Trg=
 		</data>
 		<key>Headers/RTCConfiguration.h</key>
 		<data>
@@ -250,6 +258,17 @@
 			hnSyf5/wLWNXKpqIspiKmo1AaDkQmI8BLVIL+LUmSAY=
 			</data>
 		</dict>
+		<key>Headers/RTCCameraPreviewCallback.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jrYpP/j7A0VqlDxL+6mCtGHYx78=
+			</data>
+			<key>hash2</key>
+			<data>
+			UhH1rYJcODfZi8sDNpEsuW7WCSEBPGLZjSyqhR80cis=
+			</data>
+		</dict>
 		<key>Headers/RTCCameraPreviewView.h</key>
 		<dict>
 			<key>hash</key>
@@ -265,11 +284,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OsOaHSt7YBDWSzsMDqVtbMDP3V4=
+			1+uomg4jpG4m3pg4MzWtip7+Trg=
 			</data>
 			<key>hash2</key>
 			<data>
-			JQ57laHo+asAdjtjoat/i/mAi6U/Ow8p595yNZrRsrk=
+			ole5tKXLwPt4KiDbDJ//1HyhmTovbjdZYtAEMtf4VMA=
 			</data>
 		</dict>
 		<key>Headers/RTCConfiguration.h</key>
